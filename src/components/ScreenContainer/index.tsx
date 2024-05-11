@@ -1,4 +1,4 @@
-import React, { FC, Fragment, PropsWithChildren } from 'react';
+import React, { FC, PropsWithChildren } from 'react';
 import { SafeAreaView, ViewStyle } from 'react-native';
 import styles from './styles';
 

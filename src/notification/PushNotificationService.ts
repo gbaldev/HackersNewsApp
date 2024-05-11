@@ -1,19 +1,18 @@
 import AsyncStorage from "@react-native-async-storage/async-storage";
 import { fetchArticles, normalizeHit } from "@contexts/Articles/provider";
-import { Linking, Platform } from "react-native";
+import { Linking } from "react-native";
 import BackgroundFetch from "react-native-background-fetch";
 import { Notification, Notifications } from "react-native-notifications";
 import { request, PERMISSIONS } from "react-native-permissions";
 import StackRoutes from "@navigation/routes";
 import { Article } from "models/Article";
 import { DateTime } from "luxon";
-
-const isIOS =  Platform.OS === 'ios';
+import { isIOS } from "@utils/consts";
 
 export const initBackgroundFetching = () => {
   BackgroundFetch.configure(
     {
-      minimumFetchInterval: 15, // fetch interval in minutes
+      minimumFetchInterval: 15,
     },
     async taskId => {
       console.log('Received background-fetch event: ', taskId);
@@ -136,7 +135,7 @@ export const finishRegistration = (navigation: any) => {
 export const initialNotificationsConfig = async () => {
   try {
     const firstLaunch = await AsyncStorage.getItem('firstLaunch');
-    console.log({firstLaunch})
+
     if (isIOS) {
       if (!firstLaunch || firstLaunch === 'declined') {
         Notifications.ios.registerRemoteNotifications();

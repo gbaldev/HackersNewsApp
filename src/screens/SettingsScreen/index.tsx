@@ -1,5 +1,5 @@
 import React, { useCallback, useEffect, useState } from 'react';
-import { AppState, AppStateStatus, Linking, Platform, Text, TouchableOpacity, View } from 'react-native';
+import { AppState, AppStateStatus, Text, TouchableOpacity, View } from 'react-native';
 import ScreenContainer from '@components/ScreenContainer';
 import colors from '@consts/colors';
 import { LocalizationManager as i } from '@utils/Localization/LocalizationManager';
@@ -7,9 +7,7 @@ import styles from './styles';
 import { initialNotificationsConfig } from '@notification/PushNotificationService';
 import { Notifications } from 'react-native-notifications';
 import { check, PERMISSIONS } from 'react-native-permissions';
-import { useNavigation } from '@react-navigation/native';
-
-const isIOS =Platform.OS === 'ios';
+import { isIOS } from '@utils/consts';
 
 type SettingsScreenProps = {
   preferences: { ios: boolean, android: boolean };
@@ -20,7 +18,6 @@ type SettingsScreenProps = {
 
 export const SettingsScreen: React.FC<SettingsScreenProps> = ({ preferences, setPermission, setPreferences, hasPushPermission }) => {
   const [permissionEnabled, setPermissionEnabled] = useState(hasPushPermission);
-  const navigation = useNavigation();
 
   const updatePermissions = useCallback((isEnabled: boolean) => {
     setPermission(isEnabled);
@@ -44,13 +41,11 @@ export const SettingsScreen: React.FC<SettingsScreenProps> = ({ preferences, set
   }, [preferences]);
 
   const openAppSettings = async () => {
-    initialNotificationsConfig(navigation);
+    initialNotificationsConfig();
   };
 
   useEffect(() => {
     const handleAppStateChange = async (nextAppState: AppStateStatus) => {
-      console.log('Changed:', nextAppState);
-
       if (nextAppState === 'active') {
         if (isIOS) {
           const { alert } = await Notifications.ios.checkPermissions();

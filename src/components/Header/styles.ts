@@ -1,11 +1,12 @@
-import { FontFamily } from "../../assets/fonts";
 import { StyleSheet } from "react-native";
+import { FontFamily } from "../../assets/fonts";
+import colors from "@consts/colors";
 
 export default StyleSheet.create({
   headerContainer: {
     height: 50,
     width: '100%',
-    backgroundColor: "#f60",
+    backgroundColor: colors.appBackground,
     marginBottom: 10,
     flexDirection: 'row',
     justifyContent: 'space-between',
@@ -26,7 +27,6 @@ export default StyleSheet.create({
   },
   sectionName: {
     fontFamily: FontFamily.OpenSans_Regular,
-    // fontWeight: 'bold',
     color: 'white',
     fontSize: 12,
     paddingHorizontal: 5,

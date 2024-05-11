@@ -2,11 +2,10 @@ import React, { useEffect } from 'react';
 import StackNavigator from './src/navigation/stackNavigator';
 import ArticlesProvider from './src/contexts/Articles/provider';
 import { initBackgroundFetching } from '@notification/PushNotificationService';
-import { Platform } from 'react-native';
 import { Notifications } from 'react-native-notifications';
 import { check, PERMISSIONS } from 'react-native-permissions';
 import UserInfoProvider from '@contexts/UserInfo/provider';
-const isIOS = Platform.OS === 'ios';
+import { isIOS } from '@utils/consts';
 
 const App = () => {
   useEffect(() => {

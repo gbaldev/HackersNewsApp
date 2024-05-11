@@ -19,40 +19,41 @@ const ArticleCard: ComponentType<ArticleCardProps> = ({ article, onFavorite, onD
   const navigation = useNavigation();
   const pan = useRef(new Animated.ValueXY()).current;
 
-  const panResponder = useRef(
-    PanResponder.create({
-      onMoveShouldSetPanResponder: () => !article.isDeleted,
-      onPanResponderMove: (e, gesture) => {
-        if (gesture.dx < 0) {
-          Animated.event([null, { dx: pan.x }], { useNativeDriver: false })(e, gesture);
-          disableScroll();
+  const panResponder = useMemo(
+    () => {
+      return PanResponder.create({
+        onMoveShouldSetPanResponder: () => !article.isDeleted,
+        onPanResponderMove: (e, gesture) => {
+          if (gesture.dx < 0) {
+            Animated.event([null, { dx: pan.x }], { useNativeDriver: false })(e, gesture);
+            disableScroll();
+          }
+        },
+        onPanResponderRelease: (e, gesture) => {
+          const screenWidth = Dimensions.get('window').width;
+          const swipeThreshold = -screenWidth * 0.5;
+    
+          if (gesture.dx < swipeThreshold) {
+            Animated.timing(pan, {
+              toValue: { x: -screenWidth, y: 0 },
+              duration: 200,
+              useNativeDriver: true
+            }).start(() => {
+              onDelete(article.objectID);
+              enableScroll();
+            });
+          } else {
+            Animated.spring(pan, {
+              toValue: { x: 0, y: 0 },
+              friction: 11,
+              useNativeDriver: true
+            }).start(() => {
+              enableScroll();
+            });
+          }
         }
-      },
-      onPanResponderRelease: (e, gesture) => {
-        const screenWidth = Dimensions.get('window').width;
-        const swipeThreshold = -screenWidth * 0.5;
-  
-        if (gesture.dx < swipeThreshold) {
-          Animated.timing(pan, {
-            toValue: { x: -screenWidth, y: 0 },
-            duration: 200,
-            useNativeDriver: true
-          }).start(() => {
-            onDelete(article.objectID);
-            enableScroll();
-          });
-        } else {
-          Animated.spring(pan, {
-            toValue: { x: 0, y: 0 },
-            friction: 11,
-            useNativeDriver: true
-          }).start(() => {
-            enableScroll();
-          });
-        }
-      }
-    })
-  ).current;
+      })
+    }, [article, onDelete]);
 
   const favoriteStyle = useMemo(
     () => {

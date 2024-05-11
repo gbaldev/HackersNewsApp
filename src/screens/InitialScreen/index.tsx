@@ -1,5 +1,5 @@
 import React, { useEffect, useState } from 'react';
-import { Platform, Text, TouchableOpacity, View } from 'react-native';
+import { Text, TouchableOpacity, View } from 'react-native';
 import ScreenContainer from '@components/ScreenContainer';
 import Header from '@components/Header';
 import StackRoutes, { RootStackNavigationProp } from '@navigation/routes';
@@ -10,9 +10,9 @@ import { LocalizationManager as i } from '@utils/Localization/LocalizationManage
 import colors from '@consts/colors';
 import { useUserInfo } from '@contexts/UserInfo/context';
 import styles from './styles';
-import { PERMISSIONS, check, request } from 'react-native-permissions';
+import { PERMISSIONS, request } from 'react-native-permissions';
 import AsyncStorage from '@react-native-async-storage/async-storage';
-const isIOS = Platform.OS === 'ios';
+import { isIOS } from '@utils/consts';
 
 type InitialScreenProps = {};
 
