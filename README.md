@@ -39,5 +39,9 @@ If everything is set up _correctly_, you should see the app running in your _And
 
 This is one way to run your app — you can also run it directly from within Android Studio and Xcode respectively.
 
+## Quick basic usage example
 
+
+
+https://github.com/gbaldev/HackersNewsApp/assets/104331446/e0c8aa4f-562c-4a84-a769-15faa6da8a24
 
