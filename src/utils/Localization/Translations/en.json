@@ -1,0 +1,29 @@
+{
+  "components": {
+    "header": {
+      "hackersNews": "Hacker News",
+      "allNews": "All News",
+      "favorites": "Favorites",
+      "deleted": "Deleted"
+    }
+  },
+  "initialScreen": {
+    "firstLine": "Welcome to Hacker News!",
+    "secondLine": "We're thrilled to have you onboard. To ensure you get the most out of our app and stay up-to-date with the latest news, we recommend granting permission for push notifications.",
+    "thirdLine": "While it's entirely optional at this point, enabling push notifications will enhance your experience by delivering breaking news alerts and personalized updates right to your device.",
+    "fourthLine": "However, if you prefer not to enable these permissions right now, no worries! You can always activate them manually later from the settings screen whenever you're ready.",
+    "fifthLine": "Once again, thank you for choosing Hacker News. We hope you enjoy exploring the world of news with us!",
+    "buttons": {
+      "primary": "Give me the full experience!",
+      "secondary": "I'll do that later."
+    }
+  },
+  "settingsScreen": {
+    "pushNotifications": "Push notifications",
+    "pushNotificationsDerscription": "Keep push notifications enabled to recieve updates based on your interests.",
+    "preferences": "Preferences",
+    "preferencesDescription": "Choose your preferences to keep informed.",
+    "ios": "IOS",
+    "android": "Android"
+  }
+}

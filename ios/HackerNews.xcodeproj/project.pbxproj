@@ -8,12 +8,36 @@
 
 /* Begin PBXBuildFile section */
 		00E356F31AD99517003FC87E /* HackerNewsTests.m in Sources */ = {isa = PBXBuildFile; fileRef = 00E356F21AD99517003FC87E /* HackerNewsTests.m */; };
+		03B0A950704749CCA319B3B3 /* index.ts in Resources */ = {isa = PBXBuildFile; fileRef = 2E44B0FB2FC449CCAD6D45E3 /* index.ts */; };
+		048F47574EB84917BEF4B13A /* Teko-Regular.ttf in Resources */ = {isa = PBXBuildFile; fileRef = 64DA5B021BF14962987D1E0A /* Teko-Regular.ttf */; };
+		0B3C78F87D7454C73A266674 /* PrivacyInfo.xcprivacy in Resources */ = {isa = PBXBuildFile; fileRef = D8D7EEF8F2B4A1A573749244 /* PrivacyInfo.xcprivacy */; };
 		0C80B921A6F3F58F76C31292 /* libPods-HackerNews.a in Frameworks */ = {isa = PBXBuildFile; fileRef = 5DCACB8F33CDC322A6C60F78 /* libPods-HackerNews.a */; };
+		0F0DE31356A14FDC916EF069 /* OpenSans-SemiBoldItalic.ttf in Resources */ = {isa = PBXBuildFile; fileRef = 7B96242B8A124D028673AA13 /* OpenSans-SemiBoldItalic.ttf */; };
 		13B07FBC1A68108700A75B9A /* AppDelegate.mm in Sources */ = {isa = PBXBuildFile; fileRef = 13B07FB01A68108700A75B9A /* AppDelegate.mm */; };
 		13B07FBF1A68108700A75B9A /* Images.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 13B07FB51A68108700A75B9A /* Images.xcassets */; };
 		13B07FC11A68108700A75B9A /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = 13B07FB71A68108700A75B9A /* main.m */; };
+		1656140304924121B1673613 /* OpenSans-LightItalic.ttf in Resources */ = {isa = PBXBuildFile; fileRef = 0D5BF266FF9846CBAE7CD25D /* OpenSans-LightItalic.ttf */; };
+		1D1640DD1FBA4CDE9E8FA510 /* Teko-SemiBold.ttf in Resources */ = {isa = PBXBuildFile; fileRef = 0B2A64232AA2452A90109EAC /* Teko-SemiBold.ttf */; };
+		2577DB99C4E44FD7AB8E4E8F /* OpenSans-Bold.ttf in Resources */ = {isa = PBXBuildFile; fileRef = 576EB7B3E96645FBBEE37DC8 /* OpenSans-Bold.ttf */; };
+		58842C60FC4B4F01A61F81FB /* Roboto-Bold.ttf in Resources */ = {isa = PBXBuildFile; fileRef = 652DE0F952C64CEFBC08A817 /* Roboto-Bold.ttf */; };
+		6D9071D88B5F44EF8C85D312 /* Teko-Light.ttf in Resources */ = {isa = PBXBuildFile; fileRef = 7210B35A1BF242C0AB66F08C /* Teko-Light.ttf */; };
+		71482612B6914467A2A1F2F1 /* icomoon.ttf in Resources */ = {isa = PBXBuildFile; fileRef = EC92BE0BFE67405ABF3CE0DF /* icomoon.ttf */; };
 		7699B88040F8A987B510C191 /* libPods-HackerNews-HackerNewsTests.a in Frameworks */ = {isa = PBXBuildFile; fileRef = 19F6CBCC0A4E27FBF8BF4A61 /* libPods-HackerNews-HackerNewsTests.a */; };
+		7D2C4F36BD8D4970BAE3BDA5 /* OpenSans-BoldItalic.ttf in Resources */ = {isa = PBXBuildFile; fileRef = 7ADD3B9933F74ACE9A756B44 /* OpenSans-BoldItalic.ttf */; };
 		81AB9BB82411601600AC10FF /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 81AB9BB72411601600AC10FF /* LaunchScreen.storyboard */; };
+		86ED8B29652C40E3BABAED6C /* OpenSans-ExtraBold.ttf in Resources */ = {isa = PBXBuildFile; fileRef = FCE122F0577544A38A653E0F /* OpenSans-ExtraBold.ttf */; };
+		94CD6A662707445AACDB6E50 /* OpenSans-Regular.ttf in Resources */ = {isa = PBXBuildFile; fileRef = A3F5BD4C98CE4F4C96C35E27 /* OpenSans-Regular.ttf */; };
+		A39B7656CD434227A0EE9291 /* Teko-Medium.ttf in Resources */ = {isa = PBXBuildFile; fileRef = CBD11C993E9B47BDAE96E69D /* Teko-Medium.ttf */; };
+		AD40D2DBF3F14A0EA6C74320 /* Roboto-Light.ttf in Resources */ = {isa = PBXBuildFile; fileRef = 94E99B80A04F4438BC6C3DC3 /* Roboto-Light.ttf */; };
+		B1925289CDDD4A57A90328DB /* OpenSans-SemiBold.ttf in Resources */ = {isa = PBXBuildFile; fileRef = BD34594F5DF84B47A0AEA143 /* OpenSans-SemiBold.ttf */; };
+		B1AF86AA04AD4335940BDA15 /* NotoSans-Bold.ttf in Resources */ = {isa = PBXBuildFile; fileRef = AF41311D4E834DEEA1C8C629 /* NotoSans-Bold.ttf */; };
+		C26B65A417F54B6B84B93774 /* Roboto-Medium.ttf in Resources */ = {isa = PBXBuildFile; fileRef = FA2D4466BD8C4626A27CEBAC /* Roboto-Medium.ttf */; };
+		C3D808DFD3664DDE8B529EE9 /* OpenSans-Italic.ttf in Resources */ = {isa = PBXBuildFile; fileRef = 478AB13BF3C4466DA77AA229 /* OpenSans-Italic.ttf */; };
+		C44E83546F224D2EB787BE57 /* Teko-Bold.ttf in Resources */ = {isa = PBXBuildFile; fileRef = 1324936A260A482ABD6C745C /* Teko-Bold.ttf */; };
+		CF63F20840F84043816B8CF4 /* Roboto-Regular.ttf in Resources */ = {isa = PBXBuildFile; fileRef = 6454D0BEA9B844448ABC910C /* Roboto-Regular.ttf */; };
+		D3F5CD00A0B640F7B399FF20 /* OpenSans-Light.ttf in Resources */ = {isa = PBXBuildFile; fileRef = E518A9B88C2B4126B33DA18B /* OpenSans-Light.ttf */; };
+		D9A009B4EA2B4001B8BA9DE1 /* NotoSans-Regular.ttf in Resources */ = {isa = PBXBuildFile; fileRef = EFB647E660E74951993AF641 /* NotoSans-Regular.ttf */; };
+		F6851DB5DD1C4376BBF3C557 /* OpenSans-ExtraBoldItalic.ttf in Resources */ = {isa = PBXBuildFile; fileRef = 8088BD6A45F54401854F702E /* OpenSans-ExtraBoldItalic.ttf */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -30,21 +54,45 @@
 		00E356EE1AD99517003FC87E /* HackerNewsTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = HackerNewsTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		00E356F11AD99517003FC87E /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		00E356F21AD99517003FC87E /* HackerNewsTests.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = HackerNewsTests.m; sourceTree = "<group>"; };
+		0B2A64232AA2452A90109EAC /* Teko-SemiBold.ttf */ = {isa = PBXFileReference; explicitFileType = undefined; fileEncoding = 9; includeInIndex = 0; lastKnownFileType = unknown; name = "Teko-SemiBold.ttf"; path = "../src/assets/fonts/Teko-SemiBold.ttf"; sourceTree = "<group>"; };
+		0D5BF266FF9846CBAE7CD25D /* OpenSans-LightItalic.ttf */ = {isa = PBXFileReference; explicitFileType = undefined; fileEncoding = 9; includeInIndex = 0; lastKnownFileType = unknown; name = "OpenSans-LightItalic.ttf"; path = "../src/assets/fonts/OpenSans-LightItalic.ttf"; sourceTree = "<group>"; };
+		1324936A260A482ABD6C745C /* Teko-Bold.ttf */ = {isa = PBXFileReference; explicitFileType = undefined; fileEncoding = 9; includeInIndex = 0; lastKnownFileType = unknown; name = "Teko-Bold.ttf"; path = "../src/assets/fonts/Teko-Bold.ttf"; sourceTree = "<group>"; };
 		13B07F961A680F5B00A75B9A /* HackerNews.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = HackerNews.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		13B07FAF1A68108700A75B9A /* AppDelegate.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = AppDelegate.h; path = HackerNews/AppDelegate.h; sourceTree = "<group>"; };
 		13B07FB01A68108700A75B9A /* AppDelegate.mm */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.objcpp; name = AppDelegate.mm; path = HackerNews/AppDelegate.mm; sourceTree = "<group>"; };
 		13B07FB51A68108700A75B9A /* Images.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; name = Images.xcassets; path = HackerNews/Images.xcassets; sourceTree = "<group>"; };
 		13B07FB61A68108700A75B9A /* Info.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; name = Info.plist; path = HackerNews/Info.plist; sourceTree = "<group>"; };
 		13B07FB71A68108700A75B9A /* main.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = main.m; path = HackerNews/main.m; sourceTree = "<group>"; };
-	    13B07FB81A68108700A75B9A /* PrivacyInfo.xcprivacy */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; name = PrivacyInfo.xcprivacy; path = HackerNews/PrivacyInfo.xcprivacy; sourceTree = "<group>"; };
+		13B07FB81A68108700A75B9A /* PrivacyInfo.xcprivacy */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; name = PrivacyInfo.xcprivacy; path = HackerNews/PrivacyInfo.xcprivacy; sourceTree = "<group>"; };
 		19F6CBCC0A4E27FBF8BF4A61 /* libPods-HackerNews-HackerNewsTests.a */ = {isa = PBXFileReference; explicitFileType = archive.ar; includeInIndex = 0; path = "libPods-HackerNews-HackerNewsTests.a"; sourceTree = BUILT_PRODUCTS_DIR; };
+		2E44B0FB2FC449CCAD6D45E3 /* index.ts */ = {isa = PBXFileReference; explicitFileType = undefined; fileEncoding = 9; includeInIndex = 0; lastKnownFileType = unknown; name = index.ts; path = ../src/assets/fonts/index.ts; sourceTree = "<group>"; };
 		3B4392A12AC88292D35C810B /* Pods-HackerNews.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-HackerNews.debug.xcconfig"; path = "Target Support Files/Pods-HackerNews/Pods-HackerNews.debug.xcconfig"; sourceTree = "<group>"; };
+		478AB13BF3C4466DA77AA229 /* OpenSans-Italic.ttf */ = {isa = PBXFileReference; explicitFileType = undefined; fileEncoding = 9; includeInIndex = 0; lastKnownFileType = unknown; name = "OpenSans-Italic.ttf"; path = "../src/assets/fonts/OpenSans-Italic.ttf"; sourceTree = "<group>"; };
 		5709B34CF0A7D63546082F79 /* Pods-HackerNews.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-HackerNews.release.xcconfig"; path = "Target Support Files/Pods-HackerNews/Pods-HackerNews.release.xcconfig"; sourceTree = "<group>"; };
+		576EB7B3E96645FBBEE37DC8 /* OpenSans-Bold.ttf */ = {isa = PBXFileReference; explicitFileType = undefined; fileEncoding = 9; includeInIndex = 0; lastKnownFileType = unknown; name = "OpenSans-Bold.ttf"; path = "../src/assets/fonts/OpenSans-Bold.ttf"; sourceTree = "<group>"; };
 		5B7EB9410499542E8C5724F5 /* Pods-HackerNews-HackerNewsTests.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-HackerNews-HackerNewsTests.debug.xcconfig"; path = "Target Support Files/Pods-HackerNews-HackerNewsTests/Pods-HackerNews-HackerNewsTests.debug.xcconfig"; sourceTree = "<group>"; };
 		5DCACB8F33CDC322A6C60F78 /* libPods-HackerNews.a */ = {isa = PBXFileReference; explicitFileType = archive.ar; includeInIndex = 0; path = "libPods-HackerNews.a"; sourceTree = BUILT_PRODUCTS_DIR; };
+		6454D0BEA9B844448ABC910C /* Roboto-Regular.ttf */ = {isa = PBXFileReference; explicitFileType = undefined; fileEncoding = 9; includeInIndex = 0; lastKnownFileType = unknown; name = "Roboto-Regular.ttf"; path = "../src/assets/fonts/Roboto-Regular.ttf"; sourceTree = "<group>"; };
+		64DA5B021BF14962987D1E0A /* Teko-Regular.ttf */ = {isa = PBXFileReference; explicitFileType = undefined; fileEncoding = 9; includeInIndex = 0; lastKnownFileType = unknown; name = "Teko-Regular.ttf"; path = "../src/assets/fonts/Teko-Regular.ttf"; sourceTree = "<group>"; };
+		652DE0F952C64CEFBC08A817 /* Roboto-Bold.ttf */ = {isa = PBXFileReference; explicitFileType = undefined; fileEncoding = 9; includeInIndex = 0; lastKnownFileType = unknown; name = "Roboto-Bold.ttf"; path = "../src/assets/fonts/Roboto-Bold.ttf"; sourceTree = "<group>"; };
+		7210B35A1BF242C0AB66F08C /* Teko-Light.ttf */ = {isa = PBXFileReference; explicitFileType = undefined; fileEncoding = 9; includeInIndex = 0; lastKnownFileType = unknown; name = "Teko-Light.ttf"; path = "../src/assets/fonts/Teko-Light.ttf"; sourceTree = "<group>"; };
+		7ADD3B9933F74ACE9A756B44 /* OpenSans-BoldItalic.ttf */ = {isa = PBXFileReference; explicitFileType = undefined; fileEncoding = 9; includeInIndex = 0; lastKnownFileType = unknown; name = "OpenSans-BoldItalic.ttf"; path = "../src/assets/fonts/OpenSans-BoldItalic.ttf"; sourceTree = "<group>"; };
+		7B96242B8A124D028673AA13 /* OpenSans-SemiBoldItalic.ttf */ = {isa = PBXFileReference; explicitFileType = undefined; fileEncoding = 9; includeInIndex = 0; lastKnownFileType = unknown; name = "OpenSans-SemiBoldItalic.ttf"; path = "../src/assets/fonts/OpenSans-SemiBoldItalic.ttf"; sourceTree = "<group>"; };
+		8088BD6A45F54401854F702E /* OpenSans-ExtraBoldItalic.ttf */ = {isa = PBXFileReference; explicitFileType = undefined; fileEncoding = 9; includeInIndex = 0; lastKnownFileType = unknown; name = "OpenSans-ExtraBoldItalic.ttf"; path = "../src/assets/fonts/OpenSans-ExtraBoldItalic.ttf"; sourceTree = "<group>"; };
 		81AB9BB72411601600AC10FF /* LaunchScreen.storyboard */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.storyboard; name = LaunchScreen.storyboard; path = HackerNews/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		89C6BE57DB24E9ADA2F236DE /* Pods-HackerNews-HackerNewsTests.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-HackerNews-HackerNewsTests.release.xcconfig"; path = "Target Support Files/Pods-HackerNews-HackerNewsTests/Pods-HackerNews-HackerNewsTests.release.xcconfig"; sourceTree = "<group>"; };
+		94E99B80A04F4438BC6C3DC3 /* Roboto-Light.ttf */ = {isa = PBXFileReference; explicitFileType = undefined; fileEncoding = 9; includeInIndex = 0; lastKnownFileType = unknown; name = "Roboto-Light.ttf"; path = "../src/assets/fonts/Roboto-Light.ttf"; sourceTree = "<group>"; };
+		A3F5BD4C98CE4F4C96C35E27 /* OpenSans-Regular.ttf */ = {isa = PBXFileReference; explicitFileType = undefined; fileEncoding = 9; includeInIndex = 0; lastKnownFileType = unknown; name = "OpenSans-Regular.ttf"; path = "../src/assets/fonts/OpenSans-Regular.ttf"; sourceTree = "<group>"; };
+		AF41311D4E834DEEA1C8C629 /* NotoSans-Bold.ttf */ = {isa = PBXFileReference; explicitFileType = undefined; fileEncoding = 9; includeInIndex = 0; lastKnownFileType = unknown; name = "NotoSans-Bold.ttf"; path = "../src/assets/fonts/NotoSans-Bold.ttf"; sourceTree = "<group>"; };
+		BD34594F5DF84B47A0AEA143 /* OpenSans-SemiBold.ttf */ = {isa = PBXFileReference; explicitFileType = undefined; fileEncoding = 9; includeInIndex = 0; lastKnownFileType = unknown; name = "OpenSans-SemiBold.ttf"; path = "../src/assets/fonts/OpenSans-SemiBold.ttf"; sourceTree = "<group>"; };
+		CBD11C993E9B47BDAE96E69D /* Teko-Medium.ttf */ = {isa = PBXFileReference; explicitFileType = undefined; fileEncoding = 9; includeInIndex = 0; lastKnownFileType = unknown; name = "Teko-Medium.ttf"; path = "../src/assets/fonts/Teko-Medium.ttf"; sourceTree = "<group>"; };
+		D8D7EEF8F2B4A1A573749244 /* PrivacyInfo.xcprivacy */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xml; name = PrivacyInfo.xcprivacy; path = HackerNews/PrivacyInfo.xcprivacy; sourceTree = "<group>"; };
+		E518A9B88C2B4126B33DA18B /* OpenSans-Light.ttf */ = {isa = PBXFileReference; explicitFileType = undefined; fileEncoding = 9; includeInIndex = 0; lastKnownFileType = unknown; name = "OpenSans-Light.ttf"; path = "../src/assets/fonts/OpenSans-Light.ttf"; sourceTree = "<group>"; };
+		EC92BE0BFE67405ABF3CE0DF /* icomoon.ttf */ = {isa = PBXFileReference; explicitFileType = undefined; fileEncoding = 9; includeInIndex = 0; lastKnownFileType = unknown; name = icomoon.ttf; path = ../src/assets/fonts/icomoon.ttf; sourceTree = "<group>"; };
 		ED297162215061F000B7C4FE /* JavaScriptCore.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = JavaScriptCore.framework; path = System/Library/Frameworks/JavaScriptCore.framework; sourceTree = SDKROOT; };
+		EFB647E660E74951993AF641 /* NotoSans-Regular.ttf */ = {isa = PBXFileReference; explicitFileType = undefined; fileEncoding = 9; includeInIndex = 0; lastKnownFileType = unknown; name = "NotoSans-Regular.ttf"; path = "../src/assets/fonts/NotoSans-Regular.ttf"; sourceTree = "<group>"; };
+		FA2D4466BD8C4626A27CEBAC /* Roboto-Medium.ttf */ = {isa = PBXFileReference; explicitFileType = undefined; fileEncoding = 9; includeInIndex = 0; lastKnownFileType = unknown; name = "Roboto-Medium.ttf"; path = "../src/assets/fonts/Roboto-Medium.ttf"; sourceTree = "<group>"; };
+		FCE122F0577544A38A653E0F /* OpenSans-ExtraBold.ttf */ = {isa = PBXFileReference; explicitFileType = undefined; fileEncoding = 9; includeInIndex = 0; lastKnownFileType = unknown; name = "OpenSans-ExtraBold.ttf"; path = "../src/assets/fonts/OpenSans-ExtraBold.ttf"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -94,6 +142,7 @@
 				81AB9BB72411601600AC10FF /* LaunchScreen.storyboard */,
 				13B07FB71A68108700A75B9A /* main.m */,
 				13B07FB81A68108700A75B9A /* PrivacyInfo.xcprivacy */,
+				D8D7EEF8F2B4A1A573749244 /* PrivacyInfo.xcprivacy */,
 			);
 			name = HackerNews;
 			sourceTree = "<group>";
@@ -106,6 +155,36 @@
 				19F6CBCC0A4E27FBF8BF4A61 /* libPods-HackerNews-HackerNewsTests.a */,
 			);
 			name = Frameworks;
+			sourceTree = "<group>";
+		};
+		34A47FB7F59A4BA98A0A3FC4 /* Resources */ = {
+			isa = PBXGroup;
+			children = (
+				AF41311D4E834DEEA1C8C629 /* NotoSans-Bold.ttf */,
+				EFB647E660E74951993AF641 /* NotoSans-Regular.ttf */,
+				576EB7B3E96645FBBEE37DC8 /* OpenSans-Bold.ttf */,
+				7ADD3B9933F74ACE9A756B44 /* OpenSans-BoldItalic.ttf */,
+				FCE122F0577544A38A653E0F /* OpenSans-ExtraBold.ttf */,
+				8088BD6A45F54401854F702E /* OpenSans-ExtraBoldItalic.ttf */,
+				478AB13BF3C4466DA77AA229 /* OpenSans-Italic.ttf */,
+				E518A9B88C2B4126B33DA18B /* OpenSans-Light.ttf */,
+				0D5BF266FF9846CBAE7CD25D /* OpenSans-LightItalic.ttf */,
+				A3F5BD4C98CE4F4C96C35E27 /* OpenSans-Regular.ttf */,
+				BD34594F5DF84B47A0AEA143 /* OpenSans-SemiBold.ttf */,
+				7B96242B8A124D028673AA13 /* OpenSans-SemiBoldItalic.ttf */,
+				652DE0F952C64CEFBC08A817 /* Roboto-Bold.ttf */,
+				94E99B80A04F4438BC6C3DC3 /* Roboto-Light.ttf */,
+				FA2D4466BD8C4626A27CEBAC /* Roboto-Medium.ttf */,
+				6454D0BEA9B844448ABC910C /* Roboto-Regular.ttf */,
+				1324936A260A482ABD6C745C /* Teko-Bold.ttf */,
+				7210B35A1BF242C0AB66F08C /* Teko-Light.ttf */,
+				CBD11C993E9B47BDAE96E69D /* Teko-Medium.ttf */,
+				64DA5B021BF14962987D1E0A /* Teko-Regular.ttf */,
+				0B2A64232AA2452A90109EAC /* Teko-SemiBold.ttf */,
+				EC92BE0BFE67405ABF3CE0DF /* icomoon.ttf */,
+				2E44B0FB2FC449CCAD6D45E3 /* index.ts */,
+			);
+			name = Resources;
 			sourceTree = "<group>";
 		};
 		832341AE1AAA6A7D00B99B32 /* Libraries */ = {
@@ -124,6 +203,7 @@
 				83CBBA001A601CBA00E9B192 /* Products */,
 				2D16E6871FA4F8E400B85C8A /* Frameworks */,
 				BBD78D7AC51CEA395F1C20DB /* Pods */,
+				34A47FB7F59A4BA98A0A3FC4 /* Resources */,
 			);
 			indentWidth = 2;
 			sourceTree = "<group>";
@@ -201,7 +281,8 @@
 		83CBB9F71A601CBA00E9B192 /* Project object */ = {
 			isa = PBXProject;
 			attributes = {
-				LastUpgradeCheck = 1210;
+				BuildIndependentTargetsInParallel = YES;
+				LastUpgradeCheck = 1510;
 				TargetAttributes = {
 					00E356ED1AD99517003FC87E = {
 						CreatedOnToolsVersion = 6.2;
@@ -245,6 +326,30 @@
 			files = (
 				81AB9BB82411601600AC10FF /* LaunchScreen.storyboard in Resources */,
 				13B07FBF1A68108700A75B9A /* Images.xcassets in Resources */,
+				0B3C78F87D7454C73A266674 /* PrivacyInfo.xcprivacy in Resources */,
+				B1AF86AA04AD4335940BDA15 /* NotoSans-Bold.ttf in Resources */,
+				D9A009B4EA2B4001B8BA9DE1 /* NotoSans-Regular.ttf in Resources */,
+				2577DB99C4E44FD7AB8E4E8F /* OpenSans-Bold.ttf in Resources */,
+				7D2C4F36BD8D4970BAE3BDA5 /* OpenSans-BoldItalic.ttf in Resources */,
+				86ED8B29652C40E3BABAED6C /* OpenSans-ExtraBold.ttf in Resources */,
+				F6851DB5DD1C4376BBF3C557 /* OpenSans-ExtraBoldItalic.ttf in Resources */,
+				C3D808DFD3664DDE8B529EE9 /* OpenSans-Italic.ttf in Resources */,
+				D3F5CD00A0B640F7B399FF20 /* OpenSans-Light.ttf in Resources */,
+				1656140304924121B1673613 /* OpenSans-LightItalic.ttf in Resources */,
+				94CD6A662707445AACDB6E50 /* OpenSans-Regular.ttf in Resources */,
+				B1925289CDDD4A57A90328DB /* OpenSans-SemiBold.ttf in Resources */,
+				0F0DE31356A14FDC916EF069 /* OpenSans-SemiBoldItalic.ttf in Resources */,
+				58842C60FC4B4F01A61F81FB /* Roboto-Bold.ttf in Resources */,
+				AD40D2DBF3F14A0EA6C74320 /* Roboto-Light.ttf in Resources */,
+				C26B65A417F54B6B84B93774 /* Roboto-Medium.ttf in Resources */,
+				CF63F20840F84043816B8CF4 /* Roboto-Regular.ttf in Resources */,
+				C44E83546F224D2EB787BE57 /* Teko-Bold.ttf in Resources */,
+				6D9071D88B5F44EF8C85D312 /* Teko-Light.ttf in Resources */,
+				A39B7656CD434227A0EE9291 /* Teko-Medium.ttf in Resources */,
+				048F47574EB84917BEF4B13A /* Teko-Regular.ttf in Resources */,
+				1D1640DD1FBA4CDE9E8FA510 /* Teko-SemiBold.ttf in Resources */,
+				71482612B6914467A2A1F2F1 /* icomoon.ttf in Resources */,
+				03B0A950704749CCA319B3B3 /* index.ts in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -468,6 +573,7 @@
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CLANG_ENABLE_MODULES = YES;
 				CURRENT_PROJECT_VERSION = 1;
+				DEVELOPMENT_TEAM = XK5SZNGJ9K;
 				ENABLE_BITCODE = NO;
 				INFOPLIST_FILE = HackerNews/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = (
@@ -481,6 +587,7 @@
 					"-lc++",
 				);
 				PRODUCT_BUNDLE_IDENTIFIER = "org.reactjs.native.example.$(PRODUCT_NAME:rfc1034identifier)";
+				"PRODUCT_BUNDLE_IDENTIFIER[sdk=iphoneos*]" = org.reactjs.native.example.HackerNewsChallenge;
 				PRODUCT_NAME = HackerNews;
 				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
 				SWIFT_VERSION = 5.0;
@@ -495,6 +602,7 @@
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CLANG_ENABLE_MODULES = YES;
 				CURRENT_PROJECT_VERSION = 1;
+				DEVELOPMENT_TEAM = XK5SZNGJ9K;
 				INFOPLIST_FILE = HackerNews/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
@@ -507,6 +615,7 @@
 					"-lc++",
 				);
 				PRODUCT_BUNDLE_IDENTIFIER = "org.reactjs.native.example.$(PRODUCT_NAME:rfc1034identifier)";
+				"PRODUCT_BUNDLE_IDENTIFIER[sdk=iphoneos*]" = org.reactjs.native.example.HackerNewsChallenge;
 				PRODUCT_NAME = HackerNews;
 				SWIFT_VERSION = 5.0;
 				VERSIONING_SYSTEM = "apple-generic";
@@ -517,6 +626,7 @@
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				ALWAYS_SEARCH_USER_PATHS = NO;
+				CC = "";
 				CLANG_ANALYZER_LOCALIZABILITY_NONLOCALIZED = YES;
 				CLANG_CXX_LANGUAGE_STANDARD = "c++20";
 				CLANG_CXX_LIBRARY = "libc++";
@@ -544,8 +654,10 @@
 				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
 				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
 				COPY_PHASE_STRIP = NO;
+				CXX = "";
 				ENABLE_STRICT_OBJC_MSGSEND = YES;
 				ENABLE_TESTABILITY = YES;
+				ENABLE_USER_SCRIPT_SANDBOXING = NO;
 				"EXCLUDED_ARCHS[sdk=iphonesimulator*]" = "";
 				GCC_C_LANGUAGE_STANDARD = gnu99;
 				GCC_DYNAMIC_NO_PIC = NO;
@@ -563,6 +675,8 @@
 				GCC_WARN_UNUSED_FUNCTION = YES;
 				GCC_WARN_UNUSED_VARIABLE = YES;
 				IPHONEOS_DEPLOYMENT_TARGET = 13.4;
+				LD = "";
+				LDPLUSPLUS = "";
 				LD_RUNPATH_SEARCH_PATHS = (
 					/usr/lib/swift,
 					"$(inherited)",
@@ -582,7 +696,13 @@
 					"-DFOLLY_CFG_NO_COROUTINES=1",
 					"-DFOLLY_HAVE_CLOCK_GETTIME=1",
 				);
+				OTHER_LDFLAGS = (
+					"$(inherited)",
+					" ",
+				);
+				REACT_NATIVE_PATH = "${PODS_ROOT}/../../node_modules/react-native";
 				SDKROOT = iphoneos;
+				USE_HERMES = true;
 			};
 			name = Debug;
 		};
@@ -590,6 +710,7 @@
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				ALWAYS_SEARCH_USER_PATHS = NO;
+				CC = "";
 				CLANG_ANALYZER_LOCALIZABILITY_NONLOCALIZED = YES;
 				CLANG_CXX_LANGUAGE_STANDARD = "c++20";
 				CLANG_CXX_LIBRARY = "libc++";
@@ -617,8 +738,10 @@
 				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
 				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
 				COPY_PHASE_STRIP = YES;
+				CXX = "";
 				ENABLE_NS_ASSERTIONS = NO;
 				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				ENABLE_USER_SCRIPT_SANDBOXING = NO;
 				"EXCLUDED_ARCHS[sdk=iphonesimulator*]" = "";
 				GCC_C_LANGUAGE_STANDARD = gnu99;
 				GCC_NO_COMMON_BLOCKS = YES;
@@ -629,6 +752,8 @@
 				GCC_WARN_UNUSED_FUNCTION = YES;
 				GCC_WARN_UNUSED_VARIABLE = YES;
 				IPHONEOS_DEPLOYMENT_TARGET = 13.4;
+				LD = "";
+				LDPLUSPLUS = "";
 				LD_RUNPATH_SEARCH_PATHS = (
 					/usr/lib/swift,
 					"$(inherited)",
@@ -647,7 +772,13 @@
 					"-DFOLLY_CFG_NO_COROUTINES=1",
 					"-DFOLLY_HAVE_CLOCK_GETTIME=1",
 				);
+				OTHER_LDFLAGS = (
+					"$(inherited)",
+					" ",
+				);
+				REACT_NATIVE_PATH = "${PODS_ROOT}/../../node_modules/react-native";
 				SDKROOT = iphoneos;
+				USE_HERMES = true;
 				VALIDATE_PRODUCT = YES;
 			};
 			name = Release;
