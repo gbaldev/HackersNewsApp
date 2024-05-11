@@ -1,14 +1,10 @@
 import React from 'react';
-import Svg, { Path } from 'react-native-svg';
-import { IconProps } from './types';
+import Svg, {Path} from 'react-native-svg';
+import {IconProps} from './types';
 
-const ArrowBack: React.FC<IconProps> = ({ size, color }) => {
+const ArrowBack: React.FC<IconProps> = ({size, color}) => {
   return (
-    <Svg
-      width={size}
-      height={size}
-      viewBox="0 0 1024 1024"
-    >
+    <Svg width={size} height={size} viewBox="0 0 1024 1024">
       <Path
         fill={color}
         d="M224 480h640a32 32 0 1 1 0 64H224a32 32 0 0 1 0-64z"

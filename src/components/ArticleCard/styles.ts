@@ -1,6 +1,6 @@
-import { StyleSheet } from "react-native";
-import colors from "@consts/colors";
-import { FontFamily } from "@assets/fonts";
+import {StyleSheet} from 'react-native';
+import colors from '@consts/colors';
+import {FontFamily} from '@assets/fonts';
 
 export default StyleSheet.create({
   container: {
@@ -24,7 +24,6 @@ export default StyleSheet.create({
     backgroundColor: 'white',
     borderBottomWidth: 2,
     borderBottomColor: colors.black015,
-
   },
   innerCard: {
     marginVertical: 10,
@@ -42,7 +41,7 @@ export default StyleSheet.create({
     width: '100%',
     flexDirection: 'row',
     alignItems: 'flex-start',
-    justifyContent: 'space-between'
+    justifyContent: 'space-between',
   },
   titleText: {
     marginLeft: 10,
@@ -72,4 +71,4 @@ export default StyleSheet.create({
     alignContent: 'center',
     justifyContent: 'center',
   },
-})
+});

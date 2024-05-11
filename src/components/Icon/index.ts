@@ -1,4 +1,4 @@
-import Icon, { IconMap } from './Icon.tsx';
+import Icon, {IconMap} from './Icon.tsx';
 
-export { IconMap };
+export {IconMap};
 export default Icon;

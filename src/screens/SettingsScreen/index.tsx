@@ -1,42 +1,57 @@
-import React, { useCallback, useEffect, useState } from 'react';
-import { AppState, AppStateStatus, Text, TouchableOpacity, View } from 'react-native';
+/* eslint-disable react-hooks/exhaustive-deps */
+import React, {useCallback, useEffect, useState} from 'react';
+import {
+  AppState,
+  AppStateStatus,
+  Text,
+  TouchableOpacity,
+  View,
+} from 'react-native';
 import ScreenContainer from '@components/ScreenContainer';
 import colors from '@consts/colors';
-import { LocalizationManager as i } from '@utils/Localization/LocalizationManager';
+import {LocalizationManager as i} from '@utils/Localization/LocalizationManager';
 import styles from './styles';
-import { initialNotificationsConfig } from '@notification/PushNotificationService';
-import { Notifications } from 'react-native-notifications';
-import { check, PERMISSIONS } from 'react-native-permissions';
-import { isIOS } from '@utils/consts';
+import {initialNotificationsConfig} from '@notification/PushNotificationService';
+import {Notifications} from 'react-native-notifications';
+import {check, PERMISSIONS} from 'react-native-permissions';
+import {isIOS} from '@utils/consts';
 
 type SettingsScreenProps = {
-  preferences: { ios: boolean, android: boolean };
+  preferences: {ios: boolean; android: boolean};
   setPermission: (hasPermission: boolean) => void;
-  setPreferences: (preferences: { ios: boolean, android: boolean }) => void;
+  setPreferences: (preferences: {ios: boolean; android: boolean}) => void;
   hasPushPermission: boolean;
 };
 
-export const SettingsScreen: React.FC<SettingsScreenProps> = ({ preferences, setPermission, setPreferences, hasPushPermission }) => {
+export const SettingsScreen: React.FC<SettingsScreenProps> = ({
+  preferences,
+  setPermission,
+  setPreferences,
+  hasPushPermission,
+}) => {
   const [permissionEnabled, setPermissionEnabled] = useState(hasPushPermission);
 
-  const updatePermissions = useCallback((isEnabled: boolean) => {
-    setPermission(isEnabled);
-    setPermissionEnabled(isEnabled);
-  }, [hasPushPermission]);
+  const updatePermissions = useCallback(
+    (isEnabled: boolean) => {
+      setPermission(isEnabled);
+      setPermissionEnabled(isEnabled);
+    },
+    [hasPushPermission],
+  );
   const [iosInterest, setIosInteres] = useState(preferences.ios);
   const toggleIOS = useCallback(() => {
     setPreferences({
       ios: !preferences.ios,
       android: preferences.android,
-    })
-    setIosInteres(!preferences.ios)
+    });
+    setIosInteres(!preferences.ios);
   }, [preferences]);
   const [androidInterest, setAndroidInterest] = useState(preferences.android);
   const toggleAndroid = useCallback(() => {
     setPreferences({
       ios: preferences.ios,
       android: !preferences.android,
-    })
+    });
     setAndroidInterest(!preferences.android);
   }, [preferences]);
 
@@ -48,7 +63,7 @@ export const SettingsScreen: React.FC<SettingsScreenProps> = ({ preferences, set
     const handleAppStateChange = async (nextAppState: AppStateStatus) => {
       if (nextAppState === 'active') {
         if (isIOS) {
-          const { alert } = await Notifications.ios.checkPermissions();
+          const {alert} = await Notifications.ios.checkPermissions();
           updatePermissions(alert);
         } else {
           const result = await check(PERMISSIONS.ANDROID.POST_NOTIFICATIONS);
@@ -57,7 +72,10 @@ export const SettingsScreen: React.FC<SettingsScreenProps> = ({ preferences, set
       }
     };
 
-    const subscription = AppState.addEventListener('change', handleAppStateChange);
+    const subscription = AppState.addEventListener(
+      'change',
+      handleAppStateChange,
+    );
 
     return () => {
       subscription.remove();
@@ -65,29 +83,40 @@ export const SettingsScreen: React.FC<SettingsScreenProps> = ({ preferences, set
   }, []);
 
   return (
-    <ScreenContainer style={styles.screenContainer} safeAreaViewBackgroundColor={colors.appBackground}>
+    <ScreenContainer
+      style={styles.screenContainer}
+      safeAreaViewBackgroundColor={colors.appBackground}>
       <View>
         <View style={styles.sectionContainer}>
           <View style={styles.titleContainer}>
-            <Text style={styles.title}>{i.strings('settingsScreen.pushNotifications')}</Text>
+            <Text style={styles.title}>
+              {i.strings('settingsScreen.pushNotifications')}
+            </Text>
             <TouchableOpacity
               onPress={openAppSettings}
               style={[
                 styles.toggle,
                 {
-                  backgroundColor: permissionEnabled ? colors.appBackground : colors.gray,
+                  backgroundColor: permissionEnabled
+                    ? colors.appBackground
+                    : colors.gray,
                   alignItems: permissionEnabled ? 'flex-end' : 'flex-start',
                 },
               ]}>
-              <View style={styles.toggleDot}/>
+              <View style={styles.toggleDot} />
             </TouchableOpacity>
           </View>
-          <Text style={styles.sectionDescription}>{i.strings('settingsScreen.pushNotificationsDerscription')}</Text>
+          <Text style={styles.sectionDescription}>
+            {i.strings('settingsScreen.pushNotificationsDerscription')}
+          </Text>
         </View>
-        {permissionEnabled && <View style={styles.sectionContainer}>
-          <View style={styles.titleContainer}>
-            <Text style={styles.title}>{i.strings('settingsScreen.preferences')}</Text>
-          </View>
+        {permissionEnabled && (
+          <View style={styles.sectionContainer}>
+            <View style={styles.titleContainer}>
+              <Text style={styles.title}>
+                {i.strings('settingsScreen.preferences')}
+              </Text>
+            </View>
             <View style={styles.preferenceContainer}>
               <TouchableOpacity
                 onPress={toggleIOS}
@@ -95,11 +124,15 @@ export const SettingsScreen: React.FC<SettingsScreenProps> = ({ preferences, set
                   styles.check,
                   {
                     backgroundColor: iosInterest ? colors.gray : colors.white,
-                    borderColor: iosInterest ? colors.appBackground : colors.gray,
-                  }
+                    borderColor: iosInterest
+                      ? colors.appBackground
+                      : colors.gray,
+                  },
                 ]}
-                />
-              <Text style={styles.preference}>{i.strings('settingsScreen.ios')}</Text>
+              />
+              <Text style={styles.preference}>
+                {i.strings('settingsScreen.ios')}
+              </Text>
             </View>
             <View style={styles.preferenceContainer}>
               <TouchableOpacity
@@ -107,15 +140,24 @@ export const SettingsScreen: React.FC<SettingsScreenProps> = ({ preferences, set
                 style={[
                   styles.check,
                   {
-                    backgroundColor: androidInterest ? colors.gray : colors.white,
-                    borderColor: androidInterest ? colors.appBackground : colors.gray,
+                    backgroundColor: androidInterest
+                      ? colors.gray
+                      : colors.white,
+                    borderColor: androidInterest
+                      ? colors.appBackground
+                      : colors.gray,
                   },
                 ]}
               />
-              <Text style={styles.preference}>{i.strings('settingsScreen.android')}</Text>
+              <Text style={styles.preference}>
+                {i.strings('settingsScreen.android')}
+              </Text>
             </View>
-          <Text style={styles.sectionDescription}>{i.strings('settingsScreen.preferencesDescription')}</Text>
-        </View>}
+            <Text style={styles.sectionDescription}>
+              {i.strings('settingsScreen.preferencesDescription')}
+            </Text>
+          </View>
+        )}
       </View>
     </ScreenContainer>
   );

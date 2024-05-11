@@ -1,15 +1,15 @@
-import { createContext, useContext } from 'react';
-import { Article } from '@models/Article';
+import {createContext, useContext} from 'react';
+import {Article} from '@models/Article';
 
 export type ArticleContextType = {
-    articles: Article[];
-    favorites: Article[];
-    deleted: Article[];
-    onRefresh: () => void;
-    isLoading: boolean;
-    onFavorite: (id: string) => void;
-    onDelete: (id: string) => void;
-}
+  articles: Article[];
+  favorites: Article[];
+  deleted: Article[];
+  onRefresh: () => void;
+  isLoading: boolean;
+  onFavorite: (id: string) => void;
+  onDelete: (id: string) => void;
+};
 
 const ArticlesContext = createContext<ArticleContextType | null>(null);
 ArticlesContext.displayName = 'ArticlesContext';
@@ -22,7 +22,7 @@ export const useArticles = () => {
 
   if (!context) {
     throw new Error(
-      'useArticlesContext must be used within a ArticlesContextProvider.'
+      'useArticlesContext must be used within a ArticlesContextProvider.',
     );
   }
 

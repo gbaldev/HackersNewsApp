@@ -1,5 +1,5 @@
 import React from 'react';
-import { StyleProp, ViewStyle } from 'react-native';
+import {StyleProp, ViewStyle} from 'react-native';
 import Favorite from './Favorite';
 import FavoriteActive from './FavoriteActive';
 import HeaderIcon from './HeaderIcon';

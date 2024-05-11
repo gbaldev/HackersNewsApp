@@ -1,26 +1,36 @@
-import React, { useMemo, useEffect, useState } from 'react';
-import { UserInfoContextType, Provider } from './context';
+import React, {useMemo, useEffect, useState, useCallback} from 'react';
+import {UserInfoContextType, Provider} from './context';
 import AsyncStorage from '@react-native-async-storage/async-storage';
 
 type UserInfoProviderProps = {
-  children: any
+  children: any;
 };
 
 export const UserInfoProvider: React.ComponentType<UserInfoProviderProps> = ({
   children,
 }) => {
-  const [currentHasPushPermission, setCurrentHasPushPermission] = useState<boolean>(false);
-  const [currentPreferences, setCurrentPreferences] = useState<{ ios: boolean, android: boolean }>({ ios: true, android: true });
+  const [currentHasPushPermission, setCurrentHasPushPermission] =
+    useState<boolean>(false);
+  const [currentPreferences, setCurrentPreferences] = useState<{
+    ios: boolean;
+    android: boolean;
+  }>({ios: true, android: true});
 
-  const setPermission = async (hasPermission: boolean) => {
+  const setPermission = useCallback(async (hasPermission: boolean) => {
     await AsyncStorage.setItem('pushPermission', hasPermission ? 'yes' : 'no');
     setCurrentHasPushPermission(hasPermission);
-  }
+  }, []);
 
-  const setPreferences = async (preferences: { ios: boolean, android: boolean }) => {
-    await AsyncStorage.setItem('pushPreferences', JSON.stringify(preferences));
-    setCurrentPreferences(preferences);
-  }
+  const setPreferences = useCallback(
+    async (preferences: {ios: boolean; android: boolean}) => {
+      await AsyncStorage.setItem(
+        'pushPreferences',
+        JSON.stringify(preferences),
+      );
+      setCurrentPreferences(preferences);
+    },
+    [],
+  );
 
   useEffect(() => {
     const initialLoading = async () => {
@@ -34,10 +44,11 @@ export const UserInfoProvider: React.ComponentType<UserInfoProviderProps> = ({
       if (preferences) {
         setPreferences(JSON.parse(preferences));
       }
-    }
+    };
 
     initialLoading();
-  }, []);  
+    // eslint-disable-next-line react-hooks/exhaustive-deps
+  }, []);
 
   const contextValue = useMemo<UserInfoContextType>(
     () => ({
@@ -51,10 +62,10 @@ export const UserInfoProvider: React.ComponentType<UserInfoProviderProps> = ({
       currentHasPushPermission,
       setPermission,
       setPreferences,
-    ]
+    ],
   );
 
-  return <Provider value={contextValue}>{children}</Provider>
-}
+  return <Provider value={contextValue}>{children}</Provider>;
+};
 
 export default UserInfoProvider;

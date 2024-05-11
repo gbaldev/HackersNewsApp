@@ -1,6 +1,6 @@
-import { StyleSheet } from "react-native";
-import { FontFamily } from "../../assets/fonts";
-import colors from "@consts/colors";
+import {StyleSheet} from 'react-native';
+import {FontFamily} from '../../assets/fonts';
+import colors from '@consts/colors';
 
 export default StyleSheet.create({
   headerContainer: {
@@ -23,7 +23,7 @@ export default StyleSheet.create({
     fontFamily: FontFamily.OpenSans_Bold,
     fontWeight: 'bold',
     fontSize: 14,
-    color: 'white'
+    color: 'white',
   },
   sectionName: {
     fontFamily: FontFamily.OpenSans_Regular,

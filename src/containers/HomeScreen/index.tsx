@@ -1,12 +1,19 @@
 import React from 'react';
-import { HomeScreen as HomeScreenUI } from "@screens/HomeScreen";
-import { useArticles } from '@contexts/Articles/context';
-
+import {HomeScreen as HomeScreenUI} from '@screens/HomeScreen';
+import {useArticles} from '@contexts/Articles/context';
 
 export interface HomeScreenContainerProps {}
 
 export const HomeScreenContainer: React.FC<HomeScreenContainerProps> = () => {
-  const { articles, favorites, deleted, onFavorite, onRefresh, onDelete, isLoading } = useArticles();
+  const {
+    articles,
+    favorites,
+    deleted,
+    onFavorite,
+    onRefresh,
+    onDelete,
+    isLoading,
+  } = useArticles();
 
   return (
     <HomeScreenUI
@@ -19,6 +26,6 @@ export const HomeScreenContainer: React.FC<HomeScreenContainerProps> = () => {
       onDelete={onDelete}
     />
   );
-}
+};
 
 export default HomeScreenContainer;

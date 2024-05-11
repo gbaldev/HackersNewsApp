@@ -1,6 +1,6 @@
-import { StyleSheet } from "react-native"
-import { FontFamily } from "@assets/fonts";
-import colors from "@consts/colors";
+import {StyleSheet} from 'react-native';
+import {FontFamily} from '@assets/fonts';
+import colors from '@consts/colors';
 
 export default StyleSheet.create({
   screenContainer: {
@@ -47,7 +47,7 @@ export default StyleSheet.create({
   preferenceContainer: {
     flexDirection: 'row',
     alignContent: 'center',
-    alignItems:'center',
+    alignItems: 'center',
     marginTop: 10,
   },
   preference: {
@@ -58,7 +58,7 @@ export default StyleSheet.create({
   check: {
     height: 23,
     width: 23,
-    borderRadius: 3 ,
+    borderRadius: 3,
     borderWidth: 4,
     marginRight: 5,
   },

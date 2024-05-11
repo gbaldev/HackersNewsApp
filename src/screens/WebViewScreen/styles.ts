@@ -1,5 +1,5 @@
-import { Dimensions, StyleSheet } from "react-native";
-const { height, width } = Dimensions.get('screen');
+import {Dimensions, StyleSheet} from 'react-native';
+const {height, width} = Dimensions.get('screen');
 
 export default StyleSheet.create({
   container: {
@@ -10,8 +10,8 @@ export default StyleSheet.create({
     padding: undefined,
   },
   activityIndicator: {
-    position: "absolute",
-    top: (height / 2) - 56,
-    left: (width / 2) - 16,
+    position: 'absolute',
+    top: height / 2 - 56,
+    left: width / 2 - 16,
   },
 });

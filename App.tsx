@@ -1,17 +1,17 @@
-import React, { useEffect } from 'react';
+import React, {useEffect} from 'react';
 import StackNavigator from './src/navigation/stackNavigator';
 import ArticlesProvider from './src/contexts/Articles/provider';
-import { initBackgroundFetching } from '@notification/PushNotificationService';
-import { Notifications } from 'react-native-notifications';
-import { check, PERMISSIONS } from 'react-native-permissions';
+import {initBackgroundFetching} from '@notification/PushNotificationService';
+import {Notifications} from 'react-native-notifications';
+import {check, PERMISSIONS} from 'react-native-permissions';
 import UserInfoProvider from '@contexts/UserInfo/provider';
-import { isIOS } from '@utils/consts';
+import {isIOS} from '@utils/consts';
 
 const App = () => {
   useEffect(() => {
     const initFetching = async () => {
       if (isIOS) {
-        const { alert } = await Notifications.ios.checkPermissions();
+        const {alert} = await Notifications.ios.checkPermissions();
         if (alert) {
           initBackgroundFetching();
         }
@@ -21,7 +21,7 @@ const App = () => {
           initBackgroundFetching();
         }
       }
-    }
+    };
 
     initFetching();
   }, []);
@@ -30,10 +30,11 @@ const App = () => {
     <>
       <UserInfoProvider>
         <ArticlesProvider>
-            <StackNavigator />
+          <StackNavigator />
         </ArticlesProvider>
       </UserInfoProvider>
     </>
   );
-}
+};
+
 export default App;
