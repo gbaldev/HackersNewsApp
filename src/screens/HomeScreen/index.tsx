@@ -54,6 +54,7 @@ export const HomeScreen: React.ComponentType<HomeScreenProps> = ({
       <Header onFilterChange={setFilter} />
       {dataToDisplay.length > 0 ? (
         <FlatList
+          testID="article-list"
           data={dataToDisplay}
           renderItem={({item}) => (
             <ArticleCard
@@ -72,7 +73,7 @@ export const HomeScreen: React.ComponentType<HomeScreenProps> = ({
           scrollEnabled={scrollEnabled}
         />
       ) : (
-        <View style={styles.emptyDataContainer}>
+        <View style={styles.emptyDataContainer} testID="empty-component">
           <Text style={styles.emptyDataText}>
             {' '}
             Oops, you don't have any

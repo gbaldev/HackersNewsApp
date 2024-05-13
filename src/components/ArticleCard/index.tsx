@@ -112,53 +112,49 @@ const ArticleCard: ComponentType<ArticleCardProps> = ({
   });
 
   return (
-    <>
-      <View style={styles.container}>
-        <Animated.View style={[styles.iconContainer, {opacity: iconOpacity}]}>
-          <View style={styles.iconInnerContainer}>
-            <Icon name={'trash'} size={25} color="white" />
-          </View>
-        </Animated.View>
-        <Animated.View
-          style={[
-            styles.cardContainer,
-            {
-              transform: [{translateX: pan.x}],
-            },
-          ]}
-          {...panResponder.panHandlers}>
-          <View style={styles.card}>
-            <TouchableOpacity
-              onPress={() =>
-                navigation.navigate(StackRoutes.WEBVIEW, {
-                  uri: article.story_url,
-                  title: article.story_title,
-                })
-              }
-              style={[styles.innerCard, favoriteStyle]}>
-              <View style={styles.header}>
-                <View style={styles.titleContainer}>
-                  <Text style={styles.titleText}>{article.story_title}</Text>
-                  {!article.isDeleted && (
-                    <TouchableOpacity
-                      onPress={() => onFavorite(article.objectID)}>
-                      <Icon
-                        name={
-                          !article.isFavorite ? 'favorite' : 'favoriteActive'
-                        }
-                      />
-                    </TouchableOpacity>
-                  )}
-                </View>
-              </View>
+    <View style={styles.container}>
+      <Animated.View style={[styles.iconContainer, {opacity: iconOpacity}]}>
+        <View style={styles.iconInnerContainer}>
+          <Icon name={'trash'} size={25} color="white" />
+        </View>
+      </Animated.View>
+      <Animated.View
+        style={[
+          styles.cardContainer,
+          {
+            transform: [{translateX: pan.x}],
+          },
+        ]}
+        {...panResponder.panHandlers}>
+        <View style={styles.card}>
+          <TouchableOpacity
+            onPress={() =>
+              navigation.navigate(StackRoutes.WEBVIEW, {
+                uri: article.story_url,
+                title: article.story_title,
+              })
+            }
+            style={[styles.innerCard, favoriteStyle]}>
+            <View style={styles.header}>
               <View style={styles.titleContainer}>
-                <Text style={styles.createdAtLabel}>{createdAt}</Text>
+                <Text style={styles.titleText}>{article.story_title}</Text>
+                {!article.isDeleted && (
+                  <TouchableOpacity
+                    onPress={() => onFavorite(article.objectID)}>
+                    <Icon
+                      name={!article.isFavorite ? 'favorite' : 'favoriteActive'}
+                    />
+                  </TouchableOpacity>
+                )}
               </View>
-            </TouchableOpacity>
-          </View>
-        </Animated.View>
-      </View>
-    </>
+            </View>
+            <View style={styles.titleContainer}>
+              <Text style={styles.createdAtLabel}>{createdAt}</Text>
+            </View>
+          </TouchableOpacity>
+        </View>
+      </Animated.View>
+    </View>
   );
 };
 

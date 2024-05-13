@@ -17,5 +17,6 @@
       "@assets/*": ["src/assets/*"],
       "@notification/*": ["src/notification/*"]
     },
+    "types": ["node", "jest"],
   }
 }
